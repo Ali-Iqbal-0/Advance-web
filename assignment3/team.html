@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        header {
+  padding: 10px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color:black;
+  text-decoration: none;
+  padding-left: 100px;
+}
+nav a:hover, a:focus, a:active{
+text-decoration: underline;
+color:red;
+}
+nav .icon{
+padding-right: 80px;
+}
+nav .icon1{
+padding-left: 80px;
+
+}
+        * {
+  font-family: Nunito, sans-serif;
+}
+
+.responsive-cell-block {
+  min-height: 75px;
+}
+
+.text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: space-evenly;
+}
+
+.team-head-text {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.team-head-text {
+  line-height: 50px;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+
+.container {
+  max-width: 1380px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+}
+
+.card {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+}
+
+.card-container {
+  width: 280px;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+.name {
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.position {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.feature-text {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  color: rgb(122, 122, 122);
+  line-height: 30px;
+}
+
+.social-icons {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-image-wrapper {
+  clip-path: circle(50% at 50% 50%);
+  width: 130px;
+  height: 130px;
+}
+
+.team-member-image {
+  max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+  }
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+pre{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <LI><h1>POTED</h1></LI>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="do.html">WHAT WE DO</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li class="icon1"><i class="fa fa-shopping-cart"></i> </li>
+            <li class="icon1"><i class="fa fa-heart"></i></li>
+            <li class="icon1"><div>&#9776;</div> </li>
+          </ul>
+        </nav>
+        <pre>
+        <H1>MEET OUR TEAM OF EXPERTS</H1>
+        THIS IS OUR TEAM OF EXPERTS
+        </pre>
+      </header>
+        <div class="responsive-container-block">
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="team-member-1-550x550.jpg">
+              </div>
+              <p class="text-blk name">
+                DEBBIE BRIGES
+              </p>
+              <p class="text-blk position">
+                CEO
+              </p>
+              <p class="text-blk feature-text">
+               HELLO IM CEO
+              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="team-member-2-550x550.jpg">
+              </div>
+              <p class="text-blk name">
+                THOMAS ROBINSON
+              </p>
+              <p class="text-blk position">
+                ART DIRECTOR
+              </p>
+              <p class="text-blk feature-text">
+               HI IM ART DIRECTOR
+              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="team-member-3-550x550.jpg">
+              </div>
+              <p class="text-blk name">
+               MARGARET BROWN
+              </p>
+              <p class="text-blk position">
+                BRAND MANAGER
+              </p>
+              <p class="text-blk feature-text">
+               HI IM BRAND MANAGER
+              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="team-member-4-550x550.jpg">
+              </div>
+              <p class="text-blk name">
+                TOM WILSON
+              </p>
+              <p class="text-blk position">
+                MARKETING ANALYST
+              </p>
+              <p class="text-blk feature-text">
+               HI IM MARKETING ANALYST
+              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="team-member-5-550x550.jpg">
+              </div>
+              <p class="text-blk name">
+                SOPHIE WHITE
+              </p>
+              <p class="text-blk position">
+                MEDIA DIRECTOR
+              </p>
+              <p class="text-blk feature-text">
+                HI IM MEDIA DIRECTOR
+              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="team-member-6-550x550.jpg">
+              </div>
+              <p class="text-blk name">
+                STEVE PARKER
+              </p>
+              <p class="text-blk position">
+                PROJECT MANAGER
+              </p>
+              <p class="text-blk feature-text">
+               HI IM PROJECT MANAGER
+              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                </a>
+              </div>
+            </div>
+          </div>
+            </div>
+            <footer>
+                <div class="footer">
+                <div class="contain">
+                    <div class="col">
+                      <h1>CUSTOMER SERVICE</h1>
+                      <ul>
+                        <li>Help & Contact Us</li>
+                        <li>Returns &Refunds</li>
+                        <li>Online Stores</li>
+                        <li>Terms and Conditions</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h1>COMPANY</h1>
+                      <ul>
+                        <li>What We Do</li>
+                        <li>Avaliable Services</li>
+                        <li>Latest Posts</li>
+                        <li>FAQs</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h1>SOCIAL MEDIA</h1>
+                      <ul>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Tumblr</li>
+                        <li>Pinterest</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h1>PROFILE</h1>
+                      <ul>
+                        <li>My Account</li>
+                        <li>Checkout</li>
+                        <li>Order Tracking</li>
+                        <li>Help & Support</li>
+                      </ul>
+                    </div>
+                  <div class="clearfix"></div>
+                  </div>
+                </div>
+              </footer>
+</body>
+</html>
